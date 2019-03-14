@@ -1,10 +1,11 @@
 body{
     margin: 0;
+    
 
 }
 .wrapper{
     height: 200vh;
-    width: 100vw;
+    /* width: 100vw; */
     display: grid;
     grid-template-rows: 100px auto;
 
@@ -17,8 +18,10 @@ header{
     justify-content: center;
     position: sticky;
     top: 0;
+    z-index: 10;
 }
 .main{
+    z-index: 5;
     background-color: green;
     display: flex;
     flex-wrap: wrap;
@@ -41,7 +44,7 @@ header{
 
 }
 .box{
-    height: 150px;
+    height: 250px;
     width: 150px;
     background-color: black;
     margin: 10px;
@@ -58,7 +61,7 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-
+    
 }
 #shopping-cart{
     font-size: 3rem;
@@ -86,4 +89,60 @@ header{
     align-items: center;
     font-size: 1.5rem;
 
+}
+.shadow{
+
+
+    background-color: black;
+    opacity: 0.5;
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    top: 0;
+    left: 100vw;
+    
+
+}
+.showshadow{
+
+    left: 50vw;
+
+
+}
+.showcart{
+    height: 200vh;
+    width: 100vw;
+    top: 100px;
+    left: 0;
+    border-radius: 0;
+    transition: 1000ms;
+    overflow: hidden;
+
+
+}
+.cart-wrapper{
+
+
+    background-color: yellow;
+    height: 200vh;
+    width: 100%;
+    display: none;
+}
+
+.show-cart-wrapper{
+
+
+    display: block;
+    
+}
+
+
+.showcart i.material-icons.open{
+    display: none;
+}
+i.material-icons.close{
+    display:none;
+}
+.showcart i.material-icons.close{
+    display: block;
 }

@@ -11,6 +11,7 @@
 <body>
     <div class="wrapper">
         <header>
+            <div class="shadow" onclick="menu()"></div>
             <div class="menu">
                 <div class="tags"></div>
                 <div class="tags">Home</div>
@@ -33,7 +34,12 @@
             <div class="box"></div>
             <div class="box"></div>
             <div class="cart">
-                <i id="shopping-cart" class="material-icons">shopping_cart</i>
+                <i id="shopping-cart" class="material-icons open" onclick="cart()">shopping_cart</i>
+                <div class="cart-wrapper">
+                    <i id="shopping-cart" class="material-icons close" onclick="cart()">close</i>
+
+            
+                </div>
             </div>
 
 
