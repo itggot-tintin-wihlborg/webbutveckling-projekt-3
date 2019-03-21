@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="shadow" onclick="menu()"></div>
+            <div class="menu">
+                <div class="tags"></div>
+                <div class="tags"><a href="index.html"> Home</a></div>
+                <div class="tags"> <a href="info.html"> Info</a></div>
+                <div class="tags" onclick="cart2()">Kundvagn</div>
+                
+
+            </div>
+            <div class="burger" onclick="menu()">
+                <i id="burger-menu" class="material-icons">menu</i>
+            </div>
+            <div class="title">Pajbullar</div>
+        </header>
+        <div class="main">
+            <div class="bullwrapper">
+                <div class="bullimg"></div>
+                <div class="bulltext">
+                    <h1>Pajbulle</h1>
+                    <h3>Denna pajbulle är mycket god</h3>
+                    <p>Innehåll:</p>
+                    <p>Pajdeg</p>
+                    <P>Bulldeg</P>
+                    <div class="addtocart">ADD TO CART</div>
+
+
+                </div>
+                
+
+
+
+            </div>
+            <div id="cart" class="cart">
+                <i id="shopping-cart" class="material-icons open" onclick="cart()">shopping_cart</i>
+                <div class="cart-wrapper">
+                    <i id="shopping-cart" class="material-icons close" onclick="cart()">close</i>
+                    <div class="cart-itemcontainer">
+                        <div class="item">
+                            <div class="item-name">
+                                <p>Pajbulle</p>
+                                <p>100kr</p>
+                            </div>
+                            <div class="remove">REMOVE</div>
+                        </div>
+                        <div class="item">
+                            <div class="item-name">
+                                <p>Pajbulle</p>
+                                <p>100kr</p>
+                            </div>
+                            <div class="remove">REMOVE</div>
+                        </div>
+
+                    </div>
+                    <div class="buybutton">PAY NOW</div>
+            
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="JS/main.js"></script>
+</body>
+</html>

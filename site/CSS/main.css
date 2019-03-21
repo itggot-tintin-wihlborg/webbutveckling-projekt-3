@@ -22,7 +22,7 @@ header{
 }
 .main{
     z-index: 5;
-    background-color: green;
+    background-color:  lightblue;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -48,12 +48,27 @@ header{
     width: 150px;
     background-color: black;
     margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.name{
 
+
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0,0,0,0.5);
+    position: relative;
+    top: -75px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
 }
 .cart{
     height: 100px;
     width: 100px;
-    background-color: yellow;
+    background-color:  white;
     position: fixed;
     top: 615px;
     left: 295px;
@@ -61,6 +76,7 @@ header{
     align-items: center;
     justify-content: center;
     border-radius: 50%;
+    transition: 1000ms;
     
 }
 #shopping-cart{
@@ -76,10 +92,11 @@ header{
     left: -50vw;
     display: grid;
     grid-template-rows: 80px 50px 50px 50px;
+    transition: 200ms;
 }
 .show{
     left: 0;
-
+    transition: 200ms;
 }
 .tags{
     border-bottom: 2px;
@@ -106,11 +123,12 @@ header{
 .showshadow{
 
     left: 50vw;
+    
 
 
 }
 .showcart{
-    height: 200vh;
+    height: 86.5vh;
     width: 100vw;
     top: 100px;
     left: 0;
@@ -123,16 +141,18 @@ header{
 .cart-wrapper{
 
 
-    background-color: yellow;
-    height: 200vh;
+    background-color: white;
+    height: 86.5vh;
     width: 100%;
     display: none;
+
 }
 
 .show-cart-wrapper{
 
 
-    display: block;
+    display: grid;
+    grid-template-rows: 48px 1fr 100px;
     
 }
 
@@ -145,4 +165,134 @@ i.material-icons.close{
 }
 .showcart i.material-icons.close{
     display: block;
+    border: 1px solid black;
+}
+.cart-itemcontainer{
+
+    height: 100%;
+    width: 100vw;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+
+
+}
+.buybutton{
+
+
+    height: 100%;
+    width: 100vw;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+
+
+}
+.item{
+
+    background-color: white;
+    border: 1px solid black;
+    display: grid;
+    grid-template-columns: 1fr 80.72px;
+
+    
+
+}
+.remove{
+
+    height: 100%;
+    width: 100%;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    border-left: 1px solid black;
+
+
+}
+.item-name{
+
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.item-name p{
+    margin: 0;
+    font-size: 2rem;
+
+}
+a{
+    text-decoration: none;
+    color: black;
+
+}
+.infowrapper{
+
+    height: 100%;
+    width: 100%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.info{
+
+    margin: 0;
+    height: 95%;
+    width: 95%;
+    background-color: rgba(245, 245, 245, 0.884);
+
+}
+.info p{
+
+    font-size: 2rem;
+
+}
+.bullwrapper{
+
+
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 100px;
+
+}
+.bullimg{
+
+    width: 100%;
+    height: 150px;
+    background-image: url("../IMG/wild-blueberry-pie.jpg")
+
+
+}
+.bulltext{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.bulltext p{
+
+    font-size: 1.5rem;
+
+}
+.addtocart{
+
+    width: 100%;
+    height: 100px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 3rem;
+    position: relative;
+    top: 15px;
 }

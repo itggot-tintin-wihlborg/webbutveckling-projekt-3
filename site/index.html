@@ -14,11 +14,11 @@
             <div class="shadow" onclick="menu()"></div>
             <div class="menu">
                 <div class="tags"></div>
-                <div class="tags">Home</div>
-                <div class="tags">Info</div>
-                <div class="tags">Kundvagn</div>
+                <div class="tags" onclick="home()">Home</div>
+                <div class="tags"><a href="info.html"> Info</a></div>
+                <div class="tags" onclick="cart2()">Kundvagn</div>
                 
-
+                
             </div>
             <div class="burger" onclick="menu()">
                 <i id="burger-menu" class="material-icons">menu</i>
@@ -26,27 +26,79 @@
             <div class="title">Pajbullar</div>
         </header>
         <div class="main">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="cart">
-                <i id="shopping-cart" class="material-icons open" onclick="cart()">shopping_cart</i>
-                <div class="cart-wrapper">
-                    <i id="shopping-cart" class="material-icons close" onclick="cart()">close</i>
-
-            
+            <a href="bullar.html"> 
+                <div class="box">
+                    <img src="IMG/bullar2.jpg" alt="">
+                    <div class="name">Pajbullar</div>
                 </div>
+            </a>
+            <a href="bullar.html"> 
+                <div class="box">
+                    <img src="IMG/bullar2.jpg" alt="">
+                    <div class="name">Pajbullar</div>
+                </div>
+            </a>
+            <a href="bullar.html"> 
+                <div class="box">
+                    <img src="IMG/bullar2.jpg" alt="">
+                    <div class="name">Pajbullar</div>
+                </div>
+            </a>
+            <a href="bullar.html"> 
+                <div class="box">
+                    <img src="IMG/bullar2.jpg" alt="">
+                    <div class="name">Pajbullar</div>
+                </div>
+            </a>
+            <a href="bullar.html"> 
+                <div class="box">
+                    <img src="IMG/bullar2.jpg" alt="">
+                    <div class="name">Pajbullar</div>
+                </div>
+            </a>
+            <a href="bullar.html"> 
+                <div class="box">
+                    <img src="IMG/bullar2.jpg" alt="">
+                    <div class="name">Pajbullar</div>
+                </div>
+            </a>
+            <a href="bullar.html"> 
+                <div class="box">
+                    <img src="IMG/bullar2.jpg" alt="">
+                    <div class="name">Pajbullar</div>
+                </div>
+            </a>
+        <div id="cart" class="cart">
+            <i id="shopping-cart" class="material-icons open" onclick="cart()">shopping_cart</i>
+            <div class="cart-wrapper">
+                <i id="shopping-cart" class="material-icons close" onclick="cart()">close</i>
+                <div class="cart-itemcontainer">
+                    <div class="item">
+                        <div class="item-name">
+                            <p>Pajbulle</p>
+                            <p>100kr</p>
+                        </div>
+                        <div class="remove">REMOVE</div>
+                    </div>
+                    <div class="item">
+                        <div class="item-name">
+                            <p>Pajbulle</p>
+                            <p>100kr</p>
+                        </div>
+                        <div class="remove">REMOVE</div>
+                    </div>
+                    
+                </div>
+                <div class="buybutton">PAY NOW</div>
+                
             </div>
-
-
-
-
         </div>
+        
+        
+        
+        
     </div>
-    <script src="JS/main.js"></script>
+</div>
+<script src="JS/main.js"></script>
 </body>
 </html>
