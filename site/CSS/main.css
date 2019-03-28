@@ -254,13 +254,28 @@ a{
     font-size: 2rem;
 
 }
+.wrapper2{
+    height: 80vh;
+    /* width: 100vw; */
+    display: grid;
+    grid-template-rows: 100px auto;
+
+}
+.main2{
+    z-index: 5;
+    background-color:  lightblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
 .bullwrapper{
 
 
-    height: 100vh;
+    height: 86.3vh;
     width: 100%;
-    position: fixed;
-    top: 100px;
+    /* position: fixed; */
+    /* top: 100px; */
 
 }
 .bullimg{
@@ -295,4 +310,93 @@ a{
     font-size: 3rem;
     position: relative;
     top: 15px;
+}
+
+@media screen and (min-width: 412px) {
+
+.wrapper{
+    grid-template-rows: 50px;
+
+}
+.burger{
+    position: fixed;
+    left: 30px;
+
+}
+.menu{
+    width: 20%;
+}
+.showshadow{
+    width: 80%;
+    left: 20%;
+}
+.title{
+    position: relative;
+    left: -50px;
+}
+.cart{
+    width: 60px;
+    height: 60px;
+    top: 525px;
+    left: 1175px;
+    
+
+}
+#shopping-cart{
+    font-size: 2.5rem;
+}
+.bullwrapper{
+    height: 100%;
+}
+.bulltext{
+    height: 70.5vh;
+}
+.addtocart{
+    height: 75px;
+    top: 35px;
+}
+.showcart{
+    height: 92vh;
+    width: 100vw;
+    top: 50px;
+    left: 0;
+    border-radius: 0;
+    transition: 1000ms;
+    overflow: hidden;
+
+
+}
+.cart-wrapper{
+
+    background-color: white;
+    height: 92vh;
+    width: 100%;
+    display: none;
+    
+}
+.show-cart-wrapper{
+
+
+    display: grid;
+    grid-template-rows: 48px 1fr 50px;
+    
+}
+.cart-itemcontainer{
+    width: 99vw;
+}
+.item{
+    grid-template-columns: 1fr 80.72px;
+}
+.box{
+    margin: 90px;
+}
+.wrapper2{
+    grid-template-rows: 50px;
+    height: 100vh;
+}
+.main2{
+    align-items: unset;
+    justify-content: unset;
+
+}
 }
